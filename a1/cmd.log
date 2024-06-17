@@ -1,0 +1,209 @@
+Start of Assignment 1
+    8  cd cs131
+    9  mkdir a1
+   10  cd a1
+   11  echo $HOME Q1) 
+   12  echo $HOME >> a1.txt
+   13  cat a1.txt
+   14  man id Q2)
+   15  id -u
+   16  id -g
+   17  man id
+   18  id -G
+   19  id -u >> a1.txt | id -G >> a1.txt | echo "id -u, id -G" | cat >> a1.txt
+   20  cat a1.txt
+   21  vim a1.txtr
+   22  rm a1.txtr
+   23  vim a1.txt
+   24  vin a1.txt
+   25  vim a1.txt
+   26  ls -l /pro c
+   27  clear
+   28  ls -ltr /proc/PID/mem
+   29  ps -aux
+   30  ps -u
+   31  ls -ltr /proc/3496212/mem
+   32  ls /proc/
+   33  ls /proc/ | grep "3496212"
+   34  ls /proc/3496212
+   35  id -u
+   36  ls /proc | grep "1247"
+   37  echo "ls /proc | grep "1247" >> a1.txt
+   38  a
+   39  wq
+   40  a1.txt
+   41  cd cs131
+   42  cd a1
+   43  vim a1.txt
+   44  ls /proc | grep "1247"
+   45  echo "ls /proc | grep "1247"" >> a1.txt
+   46  cat a1.txt
+   47  ls /proc | grep "1247" >> a1.txt
+   48  ls /proc/1247 | grep "mem" Q4)
+   49  echo "ls /proc/1247 | grep "mem"
+   50  "
+   51  echo "ls /proc/1247 
+   52  "
+   53  echo "ls /proc/1247 | grep "mem"" >> a1.txt
+   54  ls /proc/1247/mem
+   55  ls /proc/1247
+   56  ls
+   57  ls /proc cpu
+   58  ls /proc | grep "cpuinfo"
+   59  ls /proc | grep "mem"
+   60  /proc meminfo
+   61  ls /proc meminfo
+   62  ls /proc | grep -w "mem"
+   63  man grep
+   64  ls /proc/mem
+   65  ls /proc/meminfro
+   66  ls /proc/meminfo
+   67  cat /proc/meminfo
+   68  vim a1.txt
+   69  cat /proc/cpuinfo
+   70  echo "ls /proc | grep "mem"" >> a1.txt Q5
+   71  echo "ls /proc | grep "cpu"" >> a1.txt
+   72  head /proc/meminfo 
+   73  head /proc/meminfo | grep "total"
+   74  head /proc/meminfo | grep "Total"
+   75  man grep
+   76  head /proc/meminfo | grep -i  "total"
+   77  head /proc/meminfo | grep -i  "total" >> a1.txt Q6
+   78  head /proc/cpuinfo 
+   79  tail  /proc/cpuinfo 
+   80  head /proc/cpuinfo | grep -i  "GHz"
+   81  cat  /proc/cpuinfo | grep -i  "GHz"
+   82  tail  /proc/cpuinfo | grep -i "processor"
+   83  tail  /proc/cpuinfo | grep -i "processor" >> a1.txt
+   84  tail  /proc/cpuinfo | grep -i "architecture"
+   85  cat  /proc/cpuinfo | grep -i "architecture"
+   86  cat /proc/cpuinfo
+   87  cat /proc/cpuinfo | grep -i "arch"
+   88  cat /proc/cpuinfo | less
+   89  arch
+   90  iscpu
+   91  tail /proc/cpuinfo 
+   92  tail /proc/cpuinfo | grep "cpu"
+   93  tail /proc/cpuinfo | grep "cpu" >> a1.txt
+   94  tail /proc/cpuinfo | grep "hz"
+   95  tail /proc/cpuinfo | grep -i  "hz"
+   96  tail /proc/cpuinfo | grep -i  "hz" >> a1.txt
+   97  ls /etc
+   98  ls /etc | grep -i "os"
+   99  cat /etc/os-release 
+  100  haed /etc/os-release 
+  101  head /etc/os-release 
+  102  head -n 1  /etc/os-release 
+  103  head -n 1  /etc/os-release  >> a1.txt Q7
+  104  echo "ls /etc | grep -i "os"" >> a1.txt
+  105  ls
+  106  cp /datasets/taxidata.tar.gz .
+  107  ls
+  108  man tar
+  109  tar -xvzf taxidata.tar.gz
+  110  ls
+  111  cat taxidata
+  112  pwd
+  113  /mnt/scratch/ryujisu24/cs131/a1
+  114  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata
+  115  ls /mnt/scratch/ryujisu24/cs131/a1/taxidata
+  116  ls /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv 
+  117  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv 
+  118  cd cs131
+  119  cd a1
+  120  ls /mnt/scratch/ryujisu24/cs131/a1/taxidata/
+  121  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12"
+  122  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "total"
+  123  cd cs131
+  124  cd a1
+  125  ls
+  126  ls taxidata
+  127  less /taxidata/2019-05.csv
+  128  pwd
+  129  less /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv 
+  130  less /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "total_amount" | grep -i "2019-05-12"
+  131  less /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "total_amount"
+  132  man awk
+  133  less /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12"
+  134  less /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk '{sum+=$18 ; print $0} END{print "sum=",sum}'
+  135  less /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "total_amount"
+  136  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv
+  137  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{sum+=$16 ; print $0} END{print "sum=",sum}'
+  138  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{sum+=$18 ; print $0} END{print "sum=",sum}'
+  139  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv |  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv |  awk '{ sum_values += $2 } END { print sum_values/NR }'
+  140  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ sum_values += $16 } END { print sum_values/NR }'
+  141  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ sum_values += $18 } END { print sum_values/NR }'
+  142  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ sum_values += $17 } END { print sum_values/NR }'
+  143  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ sum_values += $1 } END { print sum_values/NR }'
+  144  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ sum_values += $17 } END { print sum_values/NR }'
+  145  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ sum_values += $14 } END { print sum_values/NR }'
+  146  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ sum_values += $12 } END { print sum_values/NR }'
+  147  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ print $17 }'
+  148  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ print $7 }'
+  149  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ print $1 }'
+  150  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk '{ print $2 }'
+  151  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F'|' 'NR==1 {for (i=1; i <= NF; i++) print i, $i}'
+  152  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | sed 's/|/\n/g;q'
+  153  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | head -1 countries | tr ',' '\n'
+  154  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | tr ',' '\n'
+  155  awk -v col=COL2 'NR==1{for(i=1;i<=NF;i++){if($i==col){c=i;break}} print $c} NR>1{print $c}' file.txt
+  156  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -v col=total_amount 
+  157  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '{ print $1 " " $2 }'
+  158  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '{ print $17 }'
+  159  cat  /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '{sum+=$2 ; print $0} END{print "sum=",sum}'
+  160  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" |  awk -F',' '{sum+=$17 ; print $0} END{print "sum=",sum}'
+  161  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }
+'
+  162  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | bc
+  163  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" |  awk -F',' '{sum+=$17 END {print sum}'
+  164* cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" |  a
+  165  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" |  awk -F','
+  166  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" |  awk -F',' {print{
+  167  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" |  awk -F',' {prin}
+  168* cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" |  awk -F',' {print}
+  169  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }
+'
+  170  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | wc
+  171  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | wc -l
+  172  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ sum+= $17 } END {print sum/228706}'
+  173  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ sum+= $17 } END {print sum/228706}' >> a1.txt Q8
+  174  cat a1.txt
+  175  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | sort -k2 -nr
+  176  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | sort -r
+  177  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | sort -r | head
+  178  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | sort -r | less
+  179  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | sort -n -r 
+  180  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | sort -n -r | head
+  181  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | sort -n -r | head -1
+  182  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print $17 }' | sort -n -r | head -1 >> a1.txt Q9
+  183  head  /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print }
+'
+  184  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | grep -i "2019-05-12" | awk -F',' '{ print }'
+  185  head /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '{ print }'
+  186   /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '{ print $4>=3 }'
+  187  head  /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '{ print $4>=3 }'
+  188  head  /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '{ $4>=3 }'
+  189* head  /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F','  $4>=3{print}'
+  190  head  /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '{ $4>=3 }'
+  191  head  /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4>=3{print}'
+  192  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4>=3{print}'
+  193  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4 > 20  {print $4;}'
+  194  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4 >= 3   {print $4;}'
+  195  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4 >= 3   {print;}'
+  196  head  /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv 
+  197  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4 >= 3   {print;}' | awk -F',' '{print $9 }' | uniq -c
+  198  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4 >= 3   {print;}' | awk -F',' '{print $9 }' | sort - uniq
+  199  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4 >= 3   {print;}' | awk -F',' '{print $9 }' | sort | uniq -c
+  200  '
+'
+  201  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4 >= 3   {print;}' | awk -F',' '{print $9 }' | sort | uniq -c | sort -n
+  202  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4 >= 3   {print;}' | awk -F',' '{print $9 }' | sort | uniq -c | sort -n -r | head -3
+  203  cat /mnt/scratch/ryujisu24/cs131/a1/taxidata/2019-05.csv | awk -F',' '$4 >= 3   {print;}' | awk -F',' '{print $9 }' | sort | uniq -c | sort -n -r | head -3 >> a1.txt Q10
+  204  cat a1.txt
+  205  vim a1.txt
+  206  cat a1.txt
+  207  less history
+  208  history
+  209  vim cmd.log
+  210  ls
+  211  history >> cmd.log

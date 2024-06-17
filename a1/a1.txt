@@ -1,0 +1,31 @@
+Section A: Tasks
+1)
+'mkdr a1' + 'cd a1'
+2)
+/mnt/scratch/ryujisu24
+'$PATH'
+3)
+1247
+1248
+'id -u, d -G'
+4)
+'ls /proc | grep mem'
+'ls /proc | grep cpu'
+5)
+MemTotal:       73080640 kB
+6)
+processor	: 255
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+7)
+NAME="Red Hat Enterprise Linux"
+ls /etc | grep -i os
+Section B: Tasks:
+8)
+18.6652
+9)
+460.04
+10)
+  39909 236.0
+  37140 237.0
+  36990 161.0
