@@ -1,0 +1,16 @@
+cat /etc/passwd >> a3.txt
+cd taxidata
+ls
+sed -n '/vendorid/p' 2019-10.csv > vendor2.csv
+wc vendor2.csv >> a3.txt
+sed 's/[:\"-]//g' 2019-10.csv > no-separators.csv
+head -10 no-separators.csv >> a3.txt
+sed -E 's/([0-9]+)\.[0-9]+/\1/g' no-separators.csv > no-fractions.csv
+head -10 no-fractions.csv >> a3.txt
+awk -F, '$17 >= 10 {tips[$14]++} END {for (tip in tips) print tip, tips[tip]}' 2019-10.csv > results.txt
+sort -t' ' -k2,2nr results.txt | head -5 >> a3.txt
+
+
+
+
+
